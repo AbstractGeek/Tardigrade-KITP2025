@@ -33,3 +33,29 @@ To use [SpinView](https://softwareservices.flir.com/Spinnaker/latest/_spin_view_
 4. Open SpinView (located at `/Applications/Spinnaker/apps/SpinView_QT`).
 5. Connect your camera and test SpinView.
 
+## Stimulus Control
+
+We will use Arduino for stimulus control. To use the code in this repository, it is recommended to install the Arduino IDE.
+
+### Installing Arduino IDE
+
+#### Windows
+
+1. Download the latest Arduino IDE for Windows from the [official Arduino website](https://www.arduino.cc/en/software).
+2. Run the downloaded installer and follow the on-screen instructions.
+3. During installation, allow the installer to install drivers if prompted.
+4. Once installed, launch the Arduino IDE and connect your Arduino board to verify the installation.
+
+#### macOS
+
+If you have already installed Homebrew (see the SpinView step above), you can easily install the Arduino IDE by entering the following in the terminal:
+```fish
+brew install arduino-ide
+```
+
+Alternatively, you can install the Arduino IDE by:
+1. Downloading the latest Arduino IDE for macOS from the [official Arduino website](https://www.arduino.cc/en/software).
+2. Opening the downloaded `.dmg` file and dragging the Arduino application to your `Applications` folder.
+3. Launching the Arduino IDE. If you see a security warning, go to System Settings → Privacy & Security and allow the app to open.
+4. Connecting your Arduino board and verifying that it appears under Tools → Port in the IDE.
+
