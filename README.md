@@ -2,13 +2,15 @@
 
 Code and documentation related to the Tardigrade project in KITP QBio 2025.
 
-## Camera Interface
+## Software installation
+
+### SpinView (Camera Interface)
 
 We will be using [SpinView](https://softwareservices.flir.com/Spinnaker/latest/_spin_view_guide.html) to record videos from the microscope.
 
 To use [SpinView](https://softwareservices.flir.com/Spinnaker/latest/_spin_view_guide.html), you will need to install the [Spinnaker SDK](https://flir.custhelp.com/app/answers/detail/a_id/4327/~/flir-spinnaker-sdk---getting-started-with-the-spinnaker-sdk). Below are the instructions for installing the Spinnaker SDK and SpinView for Windows and macOS:
 
-### Windows
+#### Windows
 
 1. Download the latest Spinnaker SDK for Windows from [here](https://www.teledynevisionsolutions.com/support/support-center/software-firmware-downloads/iis/spinnaker-sdk-download/spinnaker-sdk--download-files/?pn=Spinnaker+SDK&vn=Spinnaker+SDK).
 2. Run the installer and follow the on-screen instructions.
@@ -17,7 +19,7 @@ To use [SpinView](https://softwareservices.flir.com/Spinnaker/latest/_spin_view_
 5. Open SpinView (if not found via search, go to `C:\Program Files\FLIR Systems\Spinnaker\bin64\vs2015\SpinView_WPF.exe`).
 6. Connect your camera and test SpinView.
 
-### macOS
+#### macOS
 
 1. Install dependencies using Homebrew ([detailed instructions](https://www.teledynevisionsolutions.com/support/support-center/application-note/iis/getting-started-with-spinnaker-sdk-on-macos/)):
     - Install [Homebrew](https://brew.sh/): Open Terminal and enter:
@@ -33,11 +35,9 @@ To use [SpinView](https://softwareservices.flir.com/Spinnaker/latest/_spin_view_
 4. Open SpinView (located at `/Applications/Spinnaker/apps/SpinView_QT`).
 5. Connect your camera and test SpinView.
 
-## Stimulus Control
+### Arduino IDE (Stimulus Control)
 
 We will use Arduino for stimulus control. To use the code in this repository, it is recommended to install the Arduino IDE.
-
-### Installing Arduino IDE
 
 #### Windows
 
