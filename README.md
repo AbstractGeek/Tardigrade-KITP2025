@@ -44,7 +44,7 @@ We will use Arduino for stimulus control. To use the code in this repository, it
 1. Download the latest Arduino IDE for Windows from the [official Arduino website](https://www.arduino.cc/en/software).
 2. Run the downloaded installer and follow the on-screen instructions.
 3. During installation, allow the installer to install drivers if prompted.
-4. Once installed, launch the Arduino IDE and connect your Arduino board to verify the installation.
+4. Once installed, follow the post installation steps below.
 
 #### macOS
 
@@ -56,6 +56,19 @@ brew install arduino-ide
 Alternatively, you can install the Arduino IDE by:
 1. Downloading the latest Arduino IDE for macOS from the [official Arduino website](https://www.arduino.cc/en/software).
 2. Opening the downloaded `.dmg` file and dragging the Arduino application to your `Applications` folder.
-3. Launching the Arduino IDE. If you see a security warning, go to System Settings → Privacy & Security and allow the app to open.
-4. Connecting your Arduino board and verifying that it appears under Tools → Port in the IDE.
+3. Once installed, follow the post installation steps below. If you see a security warning, go to System Settings → Privacy & Security and allow the app to open.
 
+#### Post installation
+
+To verify your Arduino IDE installation and board connection, follow these steps:
+
+1. Open the Arduino IDE.
+2. Go to **File > Examples > 01.Basics > Blink** to open the Blink example sketch.
+3. Connect your Arduino board to your computer via USB.
+4. Select the correct board type:
+    - Go to **Tools > Board > Arduino AVR Boards > Arduino Uno** (or select your specific board model).
+5. Select the correct port:
+    - Go to **Tools > Port** and choose the port that corresponds to your connected Arduino.
+6. In the Blink sketch, change both `delay(1000);` lines to `delay(100);` to make the LED blink faster.
+7. Click the **Upload** button (right arrow icon) to upload the sketch to your Arduino.
+8. Observe the onboard LED (usually labeled "L" on the Arduino Uno). It should now blink rapidly, confirming that your setup is working correctly.
