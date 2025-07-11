@@ -4,7 +4,7 @@ This folder contains an Arduino sketch (`stimulus_light.ino`) for controlling an
 
 ## Usage
 1. Open `stimulus_light.ino` in the Arduino IDE.
-2. Connect your hardware as described above.
+2. Connect your hardware as below above.
 3. Select your Arduino board and port from **Tools > Board** and **Tools > Port**.
 4. Upload the sketch to your Arduino.
 5. Open the Serial Monitor by clicking the magnifying glass icon in the top right of the Arduino IDE, or go to **Tools > Serial Monitor**. Set the baud rate to 9600.
@@ -15,6 +15,14 @@ This folder contains an Arduino sketch (`stimulus_light.ino`) for controlling an
 - Send `R,G,B` values (0–255) via the Serial Monitor to set the LED color.
 - Example: `0,255,128` sets the LED to a teal color.
 
+## Library Dependencies
+This sketch requires the [Bounce2](https://github.com/thomasfredericks/Bounce2) library for button debouncing.
+
+### Installing Bounce2
+1. Open the Arduino IDE.
+2. Go to **Sketch > Include Library > Manage Libraries...**
+3. In the Library Manager, search for `Bounce2`.
+4. Click **Install**.
 
 ## Hardware Requirements
 - Arduino Uno
@@ -29,14 +37,18 @@ This folder contains an Arduino sketch (`stimulus_light.ino`) for controlling an
 - Blue LED: Pin 9
 - Button: Pin 2 (uses internal pull-up resistor)
 
-## Library Dependencies
-This sketch requires the [Bounce2](https://github.com/thomasfredericks/Bounce2) library for button debouncing.
+### Images
 
-### Installing Bounce2
-1. Open the Arduino IDE.
-2. Go to **Sketch > Include Library > Manage Libraries...**
-3. In the Library Manager, search for `Bounce2`.
-4. Click **Install**.
+Below are example images of the hardware setup:
+
+#### Top View
+![Top view](images/top_view.jpg)
+
+#### Side View 1
+![Side view 1](images/side_view_1.jpg)
+
+#### Side View 2
+![Side view 2](images/side_view_2.jpg)
 
 ## Notes
 - The button uses the internal pull-up resistor.
