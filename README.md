@@ -3,23 +3,26 @@
 Code and documentation related to the Tardigrade project in KITP QBio 2025.
 
 ## Software installation (on Mac) 
-1)Install Anaconda (will install Python 3) 
+1)      Install Anaconda (will install Python 3) 
+
 2)	Download and install Visual Studio Code
-3)	Download the Tardigrade Tracker Software from GitHub and save it to your desktop. 
-a.	The file should contain the following. 
-i.	TardigradeTracker.YAML
-ii.	TardigradeTracker.py 
-iii.	TrajectoryTracker.py 
-b.	Download Test Videos here and place them in the same directory as the code. 
-4)	Create a clean virtual environment for TardigradeTracker using the following code in terminal. 
-$$ conda env create -f TardigradeTracker.yaml
-5)	 Check environment creation using the following line.  
-	  $$ conda env list 
-6)	 Activate the environment for TardigradeTracker using the following line of code 
-		     $$ conda activate TardigradeTracker
-7)	 Check the environment has been properly established 
-		     $$ conda list
-	The result should look like this 
+   
+3)	Download the Tardigrade Tracker Software from GitHub and save it to your desktop.
+	a.	The file should contain the following. 
+		i.	TardigradeTracker.YAML
+		ii.	TardigradeTracker.py 
+		iii.	TrajectoryTracker.py 
+	b.	Download Test Videos and place them in the same directory as the code.
+		https://drive.google.com/drive/folders/1HrRn6jHbMnu1ERJOPAouhAAELKpub8LO?usp=sharing
+5)	Create a clean virtual environment for TardigradeTracker using the following code in terminal. 
+		$$ conda env create -f TardigradeTracker.yaml
+6)	 Check the environment creation using the following line.  
+	 	$$ conda env list 
+7)	 Activate the environment for TardigradeTracker using the following line of code 
+   		$$ conda activate TardigradeTracker
+8)	 Check that the environment has been properly established 
+   		$$ conda list
+The result should look like this 
 # packages in environment at /path/to/anaconda3/envs/TardigradeTracker:
 #
 # Name                    Version                   Build  Channel
@@ -45,15 +48,23 @@ scikit-learn             1.6.1
 scipy                    1.15.2
 threadpoolctl            3.6.0
 tqdm                     4.67.1
-8)	 Open VisualStudio code and open the TardigradeTracker.py file. 
-9)	 Click the run arrow in the upper right-hand corner  
+
+8)	 Open VisualStudio code and open the TardigradeTracker.py file.
+
+9)	 Click the run arrow in the upper right-hand corner
+	 
 10)	The code will begin to run, and a finder window will open – select the folder which contains the test videos and click on one of the video files.
-11)	The video will load into the GUI, and you can begin your analysis. 
-12)	Click the video to select a box surrounding the tardigrade (draw the box big enough so the tardigrade never leaves the box throughout the video) 
-13)	Next ascertain that the tardigrade is circled throughout the video duration by the algorithm 
-a.	You can adjust contrast, brightness, and threshold to get the best fit 
-14)	 When you are satisfied that the tardigrade is tracked throughout the video hit the run button on the bottom of the GUI. 
-15)	This will generate two new files in the TardigradeTraker folder a video showing the circled tardigrade and a CSV file containing extracted measurements. – to monitor progress, click to your Visual Studio Code where there is a percent read out. 
+    
+12)	The video will load into the GUI, and you can begin your analysis.
+	
+13)	Click the video to select a box surrounding the tardigrade (draw the box big enough so the tardigrade never leaves the box throughout the video)
+	
+14)	Next ascertain that the tardigrade is circled throughout the video duration by the algorithm 
+	a.	You can adjust contrast, brightness, and threshold to get the best fit
+
+17)	 When you are satisfied that the tardigrade is tracked throughout the video hit the run button on the bottom of the GUI.
+
+18)	This will generate two new files in the TardigradeTraker folder: a video showing the circled tardigrade and a CSV file containing extracted measurements. – to monitor progress, click to your Visual Studio Code where there is a percent readout. 
 
 
 ### SpinView (Camera Interface)
