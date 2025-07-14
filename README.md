@@ -2,7 +2,59 @@
 
 Code and documentation related to the Tardigrade project in KITP QBio 2025.
 
-## Software installation
+## Software installation (on Mac) 
+1)Install Anaconda (will install Python 3) 
+2)	Download and install Visual Studio Code
+3)	Download the Tardigrade Tracker Software from GitHub and save it to your desktop. 
+a.	The file should contain the following. 
+i.	TardigradeTracker.YAML
+ii.	TardigradeTracker.py 
+iii.	TrajectoryTracker.py 
+b.	Download Test Videos here and place them in the same directory as the code. 
+4)	Create a clean virtual environment for TardigradeTracker using the following code in terminal. 
+$$ conda env create -f TardigradeTracker.yaml
+5)	 Check environment creation using the following line.  
+	  $$ conda env list 
+6)	 Activate the environment for TardigradeTracker using the following line of code 
+		     $$ conda activate TardigradeTracker
+7)	 Check the environment has been properly established 
+		     $$ conda list
+	The result should look like this 
+# packages in environment at /path/to/anaconda3/envs/TardigradeTracker:
+#
+# Name                    Version                   Build  Channel
+bzip2                     1.0.8                h0d85af4_4    conda-forge
+ca-certificates           2025.1.31            h4653dfc_0    conda-forge
+libexpat                  2.7.0                h0dc2134_0    conda-forge
+libffi                    3.4.6                h9cdd2b7_0    conda-forge
+liblzma                   5.8.1                h9cdd2b7_0    conda-forge
+libzlib                   1.3.1                h9cdd2b7_0    conda-forge
+ncurses                   6.5                  h9cdd2b7_0    conda-forge
+openssl                   3.4.1                h0d85af4_0    conda-forge
+python                    3.13.2               h0d85af4_0    conda-forge
+readline                  8.2                  h8228510_1    conda-forge
+tk                        8.6.13               h9cdd2b7_1    conda-forge
+tzdata                    2025b                h0c530f3_0    conda-forge
+# pip packages:
+easygui                  0.98.3
+joblib                   1.4.2
+numpy                    2.2.4
+opencv-python            4.11.0.86
+pillow                   11.1.0
+scikit-learn             1.6.1
+scipy                    1.15.2
+threadpoolctl            3.6.0
+tqdm                     4.67.1
+8)	 Open VisualStudio code and open the TardigradeTracker.py file. 
+9)	 Click the run arrow in the upper right-hand corner  
+10)	The code will begin to run, and a finder window will open – select the folder which contains the test videos and click on one of the video files.
+11)	The video will load into the GUI, and you can begin your analysis. 
+12)	Click the video to select a box surrounding the tardigrade (draw the box big enough so the tardigrade never leaves the box throughout the video) 
+13)	Next ascertain that the tardigrade is circled throughout the video duration by the algorithm 
+a.	You can adjust contrast, brightness, and threshold to get the best fit 
+14)	 When you are satisfied that the tardigrade is tracked throughout the video hit the run button on the bottom of the GUI. 
+15)	This will generate two new files in the TardigradeTraker folder a video showing the circled tardigrade and a CSV file containing extracted measurements. – to monitor progress, click to your Visual Studio Code where there is a percent read out. 
+
 
 ### SpinView (Camera Interface)
 
