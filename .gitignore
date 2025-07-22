@@ -4,3 +4,6 @@ data/
 # pixi environments
 .pixi
 *.egg-info
+
+# macos specific
+.DS_Store   
