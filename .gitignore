@@ -1,0 +1,5 @@
+# folders
+data/
+
+# macos specific
+.DS_Store   

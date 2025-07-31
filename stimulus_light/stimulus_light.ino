@@ -18,6 +18,16 @@ Bounce button = Bounce();
 bool ledState = HIGH;
 
 void setup() {
+  // Setup Timer1 for 8-bit PWM on pins 9 and 10
+  // 8-bit Fast PWM mode: WGM13:0 = 0b0101 (WGM12 + WGM10)
+  TCCR1A = (1 << WGM10);
+  TCCR1B = (1 << WGM12) | (1 << CS11); // Prescaler = 8
+
+  // Setup Timer2 for 8-bit PWM on pins 3 and 11
+  // 8-bit Fast PWM mode: WGM13:0 = 0b0101 (WGM12 + WGM10)
+  TCCR2A = (1 << WGM21) | (1 << WGM20);
+  TCCR2B = (1 << CS21); // Prescaler = 8
+
   // Set RGB pins as outputs
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
